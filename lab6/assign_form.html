@@ -23,6 +23,7 @@
           <td>
             O Level
             <select name="level">
+              <option value="s9">--select--</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -33,9 +34,9 @@
           <td>1.2</td>
           <td>Applied as</td>
           <td>
-            <input type="radio" name="r" value="Direct Institue" />Direct
+            <input type="radio" name="r1" value="Direct Institue" />Direct
             Institue
-            <input type="radio" name="r" value="THrough Institute" />Through
+            <input type="radio" name="r1" value="THrough Institute" />Through
             Institue
           </td>
         </tr>
@@ -59,6 +60,7 @@
           <td>Applicant's Full Name</td>
           <td>
             <select name="design">
+              <option value="s10">--select--</option>
               <option value="Rahul">Rahul</option>
               <option value="Rohan">Rohan</option>
             </select>
@@ -78,6 +80,7 @@
           <td>
             MR.
             <select name="father">
+              <option value="s7">--select--</option>
               <option value="MOhan">MOhan</option>
               <option value="Rai">Rai</option>
             </select>
@@ -89,6 +92,7 @@
           <td>
             Mrs.
             <select name="mother">
+              <option value="s6">--select--</option>
               <option value="Priyanshi">Priyanshi</option>
               <option value="Rani">Rani</option>
             </select>
@@ -113,6 +117,7 @@
           <td>Martial Status</td>
           <td>
             <select name="martial">
+              <option value="s5">--select--</option>
               <option value="Done">Done</option>
               <option value="Not Done">Not Done</option>
             </select>
@@ -123,6 +128,7 @@
           <td>Category</td>
           <td>
             <select name="Category">
+              <option value="s4">--select--</option>
               <option value="general">general</option>
               <option value="obc">obc</option>
               <option value="st/sc">st/sc</option>
@@ -158,6 +164,7 @@
           <td>Religion</td>
           <td>
             <select name="Religion">
+              <option value="s3">--select--</option>
               <option value="hindu">hindu</option>
               <option value="muslim">muslim</option>
               <option value="christian">christian</option>
@@ -165,12 +172,98 @@
           </td>
         </tr>
         <tr>
-          <td><font color="grey">3.Contact Details </font></td>
+          <td colspan="3"><font color="grey">3.Contact Details </font></td>
         </tr>
         <tr>
           <td>3.1</td>
           <td>Mobile Number</td>
-          <td></td>
+          <td>
+            <input type="text" name="t1" placeholder="Enter Mobile Number" />
+          </td>
+        </tr>
+        <tr>
+          <td>3.2</td>
+          <td>Email ID</td>
+          <td><input type="text" name="t2" placeholder="Enter Email ID" /></td>
+        </tr>
+        <tr>
+          <td>3.3</td>
+          <td>Address Line 1</td>
+          <td><input type="text" name="t3" placeholder="Enter Address 1" /></td>
+        </tr>
+        <tr>
+          <td>3.4</td>
+          <td>Address Line 2</td>
+          <td><input type="text" name="t4" placeholder="Enter Address 2" /></td>
+        </tr>
+        <tr>
+          <td>3.5</td>
+          <td>City</td>
+          <td><input type="text" name="t5" placeholder="Enter City" /></td>
+        </tr>
+        <tr>
+          <td>3.6</td>
+          <td>State</td>
+          <td>
+            <select name="City">
+              <option value="s2">--select--</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Chhattisgarh">Chhattiisgarh</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>3.7</td>
+          <td>Pincode</td>
+          <td><input type="text" name="t6" placeholder="Enter Pincode" /></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <font color="grey">4. Educational/Qualification Details </font>
+          </td>
+        </tr>
+        <tr>
+          <td>4.1</td>
+          <td>Highest Qualification Details</td>
+          <td>
+            <select name="education">
+              <option value="s1">--select--</option>
+              <option value="10th Pass">1Oth Pass</option>
+              <option value="12th Pass">12th Pass</option>
+              <option value="Diploma">Diploma</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>4.2</td>
+          <td>Year Of Passing</td>
+          <td><input type="text" name="t7" placeholder="Enter Year" /></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <font color="grey">5. Identification Details </font>
+          </td>
+        </tr>
+        <tr>
+          <td>5.1</td>
+          <td>Aadhar Card NUmber</td>
+          <td>
+            <input type="text" name="t8" placeholder="Enter Aadhar Number" />
+          </td>
+        </tr>
+        <tr>
+          <td>5.2</td>
+          <td>Upload Photo</td>
+          <td><input type="file" name="f1" placeholder="Choose File" /></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <center>
+              <input type="button" value="submit" />
+              <input type="button" value="back" />
+            </center>
+          </td>
         </tr>
       </table>
     </center>
