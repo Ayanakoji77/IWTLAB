@@ -1,0 +1,70 @@
+body {
+  background-color: #66e3ce;
+}
+.head1 {
+  font-size: 20px;
+  text-align: center;
+  color: #003366;
+}
+.head2 {
+  margin: 20px;
+  color: red;
+}
+.container {
+  background-color: #f5d6ab;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 20px;
+}
+.item1,
+.item2,
+.item3,
+.item4 {
+  width: 230px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 0px 5px 14px beige;
+  display: flex;
+  flex-wrap: wrap;
+}
+.image {
+  display: block;
+  margin: 0 auto;
+}
+.image1,
+.image2,
+.image3,
+.image4 {
+  height: 170px;
+  width: 200px;
+}
+.descr {
+  font-size: 15px;
+}
+.price {
+  font-weight: bold;
+  color: green;
+}
+.button {
+  text-align: center;
+}
+.btn {
+  color: black;
+  width: 220px;
+  height: 30px;
+  background-color: orange;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media (max-height: 500px) {
+  .container {
+    flex: 100%;
+  }
+}
