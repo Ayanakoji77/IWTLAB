@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      var a = parseInt(prompt("Enter a numnber: "));
+      var b = parseInt(prompt("Enter a numnber: "));
+      var hcf, lcm;
+      for (var i = 1; i <= a && i <= b; i++) {
+        if (a % i == 0 && b % i == 0) {
+          hcf = i;
+        }
+      }
+      lcm = (a * b) / hcf;
+      document.write("Hcf: " + hcf + "<br>");
+      document.write("lcm: " + lcm);
+    </script>
+  </head>
+  <body></body>
+</html>

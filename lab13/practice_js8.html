@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      var a = parseInt(prompt("ENter a number: "));
+      var binary = "";
+      var prd = 1,
+        sum = 0,
+        rem;
+      while (a != 0) {
+        rem = a % 2;
+        sum = sum + rem * prd;
+        prd = prd * 10;
+        a = Math.floor(a / 2);
+      }
+      document.write("BInary: " + sum);
+    </script>
+  </head>
+  <body></body>
+</html>

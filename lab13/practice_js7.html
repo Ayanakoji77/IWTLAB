@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      var a = parseInt(prompt("ENter a number; "));
+      var found = true;
+      var i = 2;
+      while (i < a) {
+        if (a % i == 0) {
+          found = false;
+          break;
+        }
+        i++;
+      }
+
+      if (found == true) {
+        document.write("Prime");
+      } else {
+        document.write("COmposite Number");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

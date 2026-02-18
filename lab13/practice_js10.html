@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      var a = parseInt(prompt("Enter a numner: "));
+      var rev = "";
+      while (a != 0) {
+        var rem = a % 10;
+        rev = rev + rem.toString();
+        a = Math.floor(a / 10);
+      }
+      document.write(rev);
+    </script>
+  </head>
+  <body></body>
+</html>

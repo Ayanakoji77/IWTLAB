@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      var hr = parseInt(prompt("Enter the hours: "));
+      var amt = 0;
+      if (hr >= 1 && hr <= 8) {
+        amt = amt + 100;
+      } else if (hr <= 12) {
+        amt = 100 + (hr - 8) * 20;
+      } else if (hr <= 16) {
+        amt = 180 + (hr - 12) * 40;
+      } else if (hr <= 20) {
+        amt = 340 + (hr - 16) * 60;
+      } else if (hr <= 24) {
+        amt = 580 + (hr - 20) * 80;
+      }
+      document.write(amt);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      var a = parseInt(prompt("Enter a number: "));
+      var found = true;
+      for (var i = 2; i < a; i++) {
+        if (a % i == 0) {
+          found = false;
+          break;
+        }
+      }
+      if (found == true) {
+        document.write("Prime");
+      } else {
+        document.write(" not Prime");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
