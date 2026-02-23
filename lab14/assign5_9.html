@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Question 9</title>
+    <script>
+      let a = parseInt(prompt("Enter a number: "));
+      let c = a,
+        sum = 0;
+
+      let len = Math.floor(Math.log(a, 10)) + 1;
+      while (c != 0) {
+        let rem = c % 10;
+        sum = sum + Math.pow(rem, len);
+        c = Math.floor(c / 10);
+      }
+      if (sum == a) {
+        document.write("Armstrong NUmber");
+      } else {
+        document.write("Not Armstrong Number");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

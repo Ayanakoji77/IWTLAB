@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Question3</title>
+    <script>
+      let a = parseInt(prompt("Enter a number: "));
+      let k = a,
+        z = 0;
+
+      while (k != 0) {
+        let rem = k % 10;
+        k = Math.floor(k / 10);
+        z = z * 10 + rem;
+      }
+      document.write("Reversed NUmber: " + z + "<br>");
+      if (a == z) {
+        document.write("IS Pallindrome");
+      } else {
+        document.write("Not Pallindrome");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

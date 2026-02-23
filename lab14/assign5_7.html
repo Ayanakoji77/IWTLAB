@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Question 7</title>
+    <script>
+      let count = new Array();
+      let a = new Array(
+        34,
+        34,
+        55,
+        55,
+        57465,
+        2321,
+        23,
+        34,
+        89,
+        90,
+        91,
+        90,
+        91,
+      );
+      for (let i = 0; i < a.length; i++) {
+        let c = 0;
+        for (let j = 0; j < a.length; j++) {
+          if (a[i] == a[j]) {
+            c = c + 1;
+          }
+        }
+        count.push(c);
+      }
+      document.write(a + "<br>");
+      document.write(count);
+    </script>
+  </head>
+  <body></body>
+</html>
