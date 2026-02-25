@@ -6,7 +6,7 @@
       let c = a,
         sum = 0;
 
-      let len = Math.floor(Math.log(a, 10)) + 1;
+      let len = Math.floor(Math.log(10, a)) + 1;
       while (c != 0) {
         let rem = c % 10;
         sum = sum + Math.pow(rem, len);
