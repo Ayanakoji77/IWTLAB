@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Question6.css" />
+
+    <script>
+      const conversion_rates = {
+        USD: { EUR: 0.93, GBP: 0.82, INR: 82.74, AUD: 1.47 },
+        EUR: { USD: 1.08, GBP: 0.88, INR: 89.06, AUD: 1.58 },
+        GBP: { USD: 1.22, EUR: 1.14, INR: 101.5, AUD: 1.8 },
+        INR: { USD: 0.012, EUR: 0.011, GBP: 0.0098, AUD: 0.0018 },
+        AUD: { USD: 0.012, EUR: 0.011, GBP: 0.0098, INR: 55.87 },
+      };
+      function convert() {
+        let from_couuntry = document.getElementById("from_currency").value;
+        let from_value = parseFloat(document.getElementById("from_val").value);
+        let to_couuntry = document.getElementById("to_currency").value;
+        let res = 0;
+        if (from_couuntry == to_couuntry) {
+          res = from_value;
+        } else if (!isNaN(from_value)) {
+          res = conversion_rates[from_couuntry][to_couuntry] * from_value;
+        } else {
+          alert("Enter correct values");
+        }
+        document.getElementById("to_val").value = res;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="outside-box">
+      <h1>Currency Converter</h1>
+      <div class="currency">
+        <label>From: </label>
+        <br />
+        <select id="from_currency" class="currency-select">
+          <option>EUR</option>
+          <option>USD</option>
+          <option>GBP</option>
+          <option>INR</option>
+          <option>AUD</option>
+        </select>
+        <br />
+        <input
+          type="text"
+          id="from_val"
+          class="amount-input"
+          placeholder="ENter value: "
+        />
+      </div>
+      <div class="currency">
+        <label>To: </label>
+        <br />
+        <select id="to_currency" class="currency-select">
+          <option>EUR</option>
+          <option>USD</option>
+          <option>GBP</option>
+          <option>INR</option>
+          <option>AUD</option>
+        </select>
+        <br />
+        <input type="text" id="to_val" class="amount-input" placeholder="" />
+      </div>
+      <div>
+        <input type="button" id="convert" onclick="convert()" value="CONVERT" />
+      </div>
+    </div>
+  </body>
+</html>

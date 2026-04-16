@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+*{
+	margin:0px;
+	padding:0px;
+	border:box-shadow;
+}
+.header
+{
+	display:flex;
+	background-color:black;
+	color:white;
+	font-size:20px;
+	justify-content:space-between;
+}

@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Queston 3</title>
+    <script>
+      function abc(color) {
+        var a = prompt(
+          "Do you really want to change . Enter y for yes or n for no",
+        );
+        if (a == "y") {
+          document.getElementById("hell").style.backgroundColor = color;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" id="r" value="red" onclick="abc('red')" />
+    <input type="button" id="b" value="blue" onclick="abc('blue')" />
+    <input type="button" id="g" value="green" onclick="abc('green')" />
+    <div
+      ="xyz"
+      id="hell"
+      style="height: 500px; width: 300px; background-color: orange"
+    ></div>
+  </body>
+</html>

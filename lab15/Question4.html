@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      function abc(oprx) {
+        var x = document.getElementById("main");
+        if (oprx == "+") {
+          x.value = parseInt(x.value) + 1;
+        } else if (oprx == "-") {
+          if (parseInt(x.value) - 1 >= 0) {
+            x.value = parseInt(x.value) - 1;
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" value="+" onclick="abc('+')" />
+    <input type="button" value="-" onclick="abc('-')" />
+    <input type="text" id="main" value="5" />
+  </body>
+</html>

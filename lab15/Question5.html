@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      function abc() {
+        var x = parseInt(document.getElementById("xyz").value);
+        let y = true;
+        for (let i = 2; i < x; i++) {
+          if (x % i == 0) {
+            y = false;
+            break;
+          }
+        }
+        if (y == true) {
+          alert("Its prime number");
+        } else {
+          alert("Not pRime number");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input id="xyz" type="text" placeholder="45" />
+    <input type="button" value="check" onclick="abc()" />
+  </body>
+</html>
