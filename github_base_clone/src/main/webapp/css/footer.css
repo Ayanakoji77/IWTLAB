@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+.footer {
+    width: 100%;
+    height: 600px;
+    background-color: #0f1511;
+    display: flex;
+    flex-direction: column; 
+}
+
+.upperside {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    padding: 60px 40px;
+    font-family: Arial, sans-serif;
+	gap:100px;
+}
+
+
+.subscribe-box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 300px; 
+}
+
+.logobox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logobox img {
+    width: 32px;
+    height: 32px;
+}
+
+.subscribe-text h3 {
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    font-weight: 600;
+}
+
+.subscribe-text p {
+    color: #7d8590;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.subsribe-btn button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #4b4f4c;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.subsribe-btn button:hover {
+    border-color: #ffffff;
+}
+
+.all-links {
+    display: flex;
+    gap: 80px; 
+}
+
+.column-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-box h4 {
+    color: #7d8590;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+.column-box ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+}
+
+.column-box ul li a {
+    color: #7d8590;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.column-box ul li a:hover {
+    color: #0969da; 
+    text-decoration: underline;
+}
+.bottomside {
+    height: 84px;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    padding: 0 40px; 
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+	background-color: #262C28;
+}
+
+
+.aboutlinks {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+
+.links-row {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.links-row span,
+.links-row a {
+    color: #7d8590; 
+    text-decoration: none;
+}
+
+.links-row a:hover {
+    color: #ffffff; 
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    gap: 16px;
+}
+.social-icons img 
+{
+	filter: invert(100%) brightness(80%);
+}
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.7; 
+    transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover img {
+    filter: brightness(50%);
+}

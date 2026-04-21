@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body 
+{
+	background-color: black;
+	
+}
+.heading 
+{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.heading h1 
+{
+	color:White;
+	font-weight: 450;
+	font-style: italic;
+	font-size: 56px;
+	text-decoration: underline;
+}

@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+html, body {
+    height: 100%;
+    margin: 0;
+	padding:0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+	min-height: 100vh;
+	overflow-y: scroll;
+}
+.hero-section {
+    width: 100%;
+    
+    min-height: 350px; 
+    
+    background-image: url("../img/about.webp"); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+    padding: 0 20px; 
+}
+
+.hero-section h2 {
+    font-size: 56px;
+    font-weight: 440;
+    font-family: "Mona Sans", -apple-system, sans-serif;
+    color: white;
+    line-height: 60px;
+    margin: 0; 
+}
+
+.hero-section p {
+    font-size: 16px;
+    color: white;
+    font-weight: 440;
+    font-family: "Mona Sans", -apple-system, sans-serif;
+    margin: 0;
+}
+
+
+.stats 
+{
+	background-color: black;
+	display: flex;
+	gap:20px;
+	justify-content: space-evenly;
+	align-items: center;
+	width:100%;
+	padding:60px 0px;
+	border-radius: 20px 20px 0px 0px;
+	margin-top: -20px; 
+    position: relative; 
+    z-index: 10;
+}
+
+.stat-card 
+{
+	text-align: left;
+}
+.stats p 
+{
+	color:white;
+	font-size:48px;
+	font-weight:500;
+	font-family: "Mona Sans", "MonaSansFallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+	padding:0px 
+}
+
+.stat-card p span 
+{
+	display: block;
+	font-size:16px;
+	font-weight: 400;
+	color:white;
+	margin-top: 8px;	
+}
+
+
+.feature-box 
+{
+	display: flex;
+	width: 100%;
+	background-color: black;
+	padding: 40px 0px;
+	justify-content: space-around;
+	
+}
+.feature-grid 
+{
+	display:grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap:38px;
+	width:100%;
+	max-width:1200px;
+	
+}
+
+.feature-card {
+    background-color: #0f1511; 
+    padding: 38px;
+    border-radius: 16px;
+    border: 1px solid #0f1511;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+	justify-content: space-between;
+	
+}
+.feature-card h2
+{
+	font-size: 20px;	
+}
+.feature-card span
+{
+		color:#86ccf3;	
+}
+.feature-card a 
+{
+	text-decoration-line: none;
+	color:white;
+}
+.feature-card p 
+{
+	color: #727b75;
+}
+.feature-card:hover
+{
+	transform: scale(105%);
+}
+.img-card 
+{
+	width:44px;
+	height: 44px;
+	background-color: #160048;
+	border-radius:70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img-card img 
+{
+	width:20px;
+	height:20px;
+	filter: invert(56%) sepia(48%) saturate(613%) hue-rotate(220deg) brightness(102%) contrast(98%);
+}
+
+
+
+
+

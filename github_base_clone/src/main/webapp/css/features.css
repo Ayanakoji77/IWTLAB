@@ -1,0 +1,400 @@
+@charset "UTF-8";
+
+html, body {
+    height: 100%;
+    margin: 0;
+	padding:0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+	min-height: 100vh;
+	overflow-y: scroll;
+}
+
+.nav-header 
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.navbar {
+    background-color: black;
+    display: flex;
+   
+    border-top: 1px solid rgba(255, 255, 255, 0.2); 
+    padding: 0 30px; 
+    height: 60px;
+    gap: 0; 
+    justify-content: start;
+    align-items: center;
+}
+.features-card {
+    background-color: transparent;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    padding-right: 30px; 
+    margin-right: 30px;
+}
+.features-card a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+.features-card a:hover 
+{
+	opacity: 0.7;
+}
+.links ul 
+{
+	display: flex;
+	gap:30px;
+	list-style: none;
+}
+
+.links ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+	display: block;
+}
+
+.links ul li a:hover {
+    opacity: 0.7;
+}
+
+.title 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: radial-gradient(
+	  ellipse 75% 60% at 50% 10%,  
+	  #4a2f9a 0%,                   
+	  #2a1560 40%,                 
+	  #000000 100%                  
+	);
+	padding:80px;
+}
+.title-content 
+{
+	display: flex;
+	flex-direction: column;
+	gap:8px;
+}
+.title-content h1 
+{
+	font-size: 56px;
+	color: white;
+	font-weight: 440;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	padding:0px;
+	margin:0px;
+}
+
+.section 
+{
+	background-color: black;
+	padding:40px;
+}
+
+.brand-content 
+{
+	display: flex;
+	gap:50px;
+	justify-content: center;
+	align-items: stretch;
+}
+.brand-card {
+    background-color: #0f1511; 
+    border-radius: 16px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    gap: 30px;
+	padding : 60px;
+	justify-content: space-between;
+	transition: transform 0.2s ease;
+}
+
+.brand-card h2
+{
+	font-size: 20px;	
+}
+.brand-card span
+{
+	color:#86ccf3;	
+}
+.brand-card a 
+{
+	text-decoration-line: none;
+	color:white;
+}
+
+.brand-card:hover
+{
+	transform: scale(105%);
+}
+.img-card 
+{
+	width:44px;
+	height: 44px;
+	background-color: #160048;
+	border-radius:70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img-card img 
+{
+	width:20px;
+	height:20px;
+	filter: invert(56%) sepia(48%) saturate(613%) hue-rotate(220deg) brightness(102%) contrast(98%);
+}
+.sticky-nav-section {
+    position: sticky;
+    top: 0;           
+    z-index: 100;     
+    background-color: black; 
+    padding: 0 20px;  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+}
+.nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto;    
+    padding: 20px 0px; 
+}
+
+
+.nav a {
+    text-decoration: none;
+    padding: 10px 0;
+    position: relative; 
+}
+
+.nav span {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.nav a:hover span {
+    opacity: 0.7; 
+}
+
+.collaborative {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    scroll-margin-top: 80px;
+}
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 1200px; 
+    width: 100%;
+}
+
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-header h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 460;
+    margin: 0; 
+}
+
+.card-img img {
+    border-radius: 24px;
+    width: 100%; 
+    display: block;
+}
+
+.card-footer {
+    display: grid;
+    grid-template-columns: 5fr 3fr; 
+    gap: 60px; 
+    align-items: start; 
+    width: 100%; 
+    padding-top: 20px;
+}
+
+
+.card-footer-left p {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+.card-footer-right ul {
+    display: flex;
+    flex-direction: column; 
+    gap: 24px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-footer-right li {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left; 
+    border-left: 2px solid rgba(255, 255, 255, 0.3); 
+    padding-left: 16px; 
+}
+
+
+.link-box 
+{
+	display: flex;
+	width: 100%;
+	background-color: black;
+	padding: 40px 0px;
+	justify-content: space-around;
+	
+}
+.link-grid 
+{
+	display:grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap:38px;
+	width:100%;
+	max-width:1200px;
+	
+}
+
+.link-card {
+    background-color: #0f1511; 
+    padding: 38px;
+    border-radius: 16px;
+    border: 1px solid #0f1511;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+	justify-content: space-between;
+	transition: transform 0.2s ease;
+	
+}
+.link-card h3
+{
+	font-size: 20px;	
+}
+.link-card span
+{
+		color:#86ccf3;	
+}
+.link-card a 
+{
+	text-decoration-line: none;
+	color:white;
+	font-weight: 500;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.link-card p 
+{
+	color: #9ea8a0;
+	font-weight: 500;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.link-card:hover
+{
+	transform: scale(105%);
+	
+}
+
+.pricing-sec 
+{
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 100px 0px;
+}
+
+.pricing-card 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 80px 350px;
+	background-color: #0f1511;
+	border-radius: 8px;
+}
+.pricing-content 
+{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap:30px;
+}
+.pricing-content  h3 
+{
+	color:white;
+	font-size:48px;
+	font-family: "Mona Sans", "MonaSansFallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+
+}
+.pricing-content  p 
+{
+	color:white;
+	font-size:14px;
+}
+.pricing-links 
+{
+	display: flex;
+	justify-content: center;
+	gap:16px;
+}
+.pricing-links  a 
+{
+	text-decoration-line: none;
+	color:white;
+}
+
+.pricing 
+{
+	background-color: #08872b;
+	padding : 10px 30px;
+	border-radius: 12px;
+}
+.contact 
+{
+	background-color: #1f2521;
+	padding:10px 30px;
+	border-radius: 12px;
+}
